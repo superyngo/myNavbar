@@ -6,12 +6,6 @@ const state = [
   {tag: "li", title: "Travel Maker", link: "#"},
   {tag: "li", title: "Travel Maker", link: "#"},
   {tag: "li", title: "Travel Maker", link: "#"},
-  {tag: "li", title: "Travel Maker", link: "#"},
-  {tag: "li", title: "Travel Maker", link: "#"},
-  {tag: "li", title: "Travel Maker", link: "#"},
-  {tag: "li", title: "Travel Maker", link: "#"},
-  {tag: "li", title: "Travel Maker", link: "#"},
-  {tag: "li", title: "Travel Maker", link: "#"},
 ];
 </script>
 
@@ -27,6 +21,7 @@ const state = [
         <a href="comp.link">{{ comp.title }} </a>
       </component>
     </ul>
+    <div id="copyright">© 2023 superyngo All Rights Reserved.</div>
   </div>
 </template>
 
