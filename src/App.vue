@@ -1,10 +1,10 @@
 <script setup>
 const state = [
-  {tag: "li", title: "To Do", link: "https://superyngo.github.io/to-do-list/"},
+  {tag: "li", title: "To Do", link: "https://superyngo.github.io/to_do_list/"},
   {
     tag: "li",
     title: "To Do Renderer",
-    link: "https://superyngo.github.io/to-do_list_with_renderer/",
+    link: "https://superyngo.github.io/to_do_list_with_renderer/",
   },
   {tag: "li", title: "Timer", link: "https://superyngo.github.io/timer_vue3/"},
   {
@@ -45,7 +45,7 @@ const state = [
   {
     tag: "li",
     title: "Quasar Framework copycat",
-    link: "https://superyngo.github.io/QuasarFrameworkcopycat/",
+    link: "https://superyngo.github.io/quasar_framework_copycat/",
   },
   {
     tag: "li",
@@ -55,7 +55,7 @@ const state = [
   {
     tag: "li",
     title: "Travel Maker",
-    link: "https://github.com/superyngo/Travel-Maker",
+    link: "https://superyngo.github.io/Travel-Maker/",
   },
 ];
 console.log(state);
