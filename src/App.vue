@@ -18,11 +18,11 @@ const state = [
     title: "Bill Splitter",
     link: "https://superyngo.github.io/bill_splitter_vue3/",
   },
-  {
-    tag: "li",
-    title: "Calender",
-    link: "https://superyngo.github.io/calender_vue3/",
-  },
+  // {
+  //   tag: "li",
+  //   title: "Calender",
+  //   link: "https://superyngo.github.io/calender_vue3/",
+  // },
   {
     tag: "li",
     title: "Weight Tracker",
