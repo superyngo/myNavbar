@@ -6,7 +6,6 @@
   box-sizing: border-box;
   color-scheme: light dark;
   color: #213547;
-  background-color: ffffff !important;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,6 +16,8 @@
 body {
   margin: 0;
   min-width: 320px;
+  background-color: #fff0df;
+
   /* min-height: 100vh; */
 }
 
