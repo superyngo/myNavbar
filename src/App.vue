@@ -70,7 +70,7 @@ console.log(state);
         class="item"
         :key="item.title"
       >
-        <a :href="item.link">{{ item.title }}</a>
+        <a :href="item.link" target="_blank">{{ item.title }}</a>
       </component>
     </ul>
     <div id="copyright">© 2023 superyngo All Rights Reserved.</div>
