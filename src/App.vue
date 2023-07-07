@@ -29,7 +29,7 @@ const state = [
   },
   {
     tag: "li",
-    title: "All Countries Around The Map",
+    title: "Every Country Around The Map",
     link: "https://superyngo.github.io/countries_around_world/",
   },
   {
