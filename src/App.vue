@@ -59,32 +59,32 @@ const state = [
     link: "https://superyngo.github.io/Travel-Maker/",
   },
 ];
-nextTick(() => {
-  // Get a reference to the link element within the iframe
-  const item = document.querySelectorAll(".item");
+// nextTick(() => {
+//   // Get a reference to the link element within the iframe
+//   const item = document.querySelectorAll(".item");
 
-  // Add a click event listener to the link
-  item.forEach((li) =>
-    li.addEventListener("mousedown", function (event) {
-      // Get the target URL from the link
-      const targetUrl = li.dataset.link;
+//   // Add a click event listener to the link
+//   item.forEach((li) =>
+//     li.addEventListener("mousedown", function (event) {
+//       // Get the target URL from the link
+//       const targetUrl = li.dataset.link;
 
-      // Check if the middle button is clicked (button value: 1)
-      if (event.button === 1) {
-        // Open the link in a new page
-        window.open(targetUrl, "_blank");
-      }
+//       // Check if the middle button is clicked (button value: 1)
+//       if (event.button === 1) {
+//         // Open the link in a new page
+//         window.open(targetUrl, "_blank");
+//       }
 
-      if (event.button === 0) {
-        // Open the link in a new page
-        window.location.href = targetUrl;
-      }
+//       if (event.button === 0) {
+//         // Open the link in a new page
+//         window.location.href = targetUrl;
+//       }
 
-      // Scroll the parent page to the target URL
-      // window.parent.location.href = targetUrl;
-    })
-  );
-});
+//       // Scroll the parent page to the target URL
+//       // window.parent.location.href = targetUrl;
+//     })
+//   );
+// });
 </script>
 
 <template>
@@ -96,9 +96,9 @@ nextTick(() => {
         :key="item.title"
         class="itemli"
       >
-        <button :data-link="item.link" class="item">
+        <a :href="item.link" class="item">
           {{ item.title }}
-        </button>
+        </a>
       </component>
     </ul>
     <div id="copyright">© 2023 superyngo All Rights Reserved.</div>
