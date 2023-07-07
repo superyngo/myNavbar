@@ -14,16 +14,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #000118;
-  text-decoration: underline;
-}
-a:hover {
-  color: #48494e;
-  text-decoration: none;
-}
-
 body {
   margin: 0;
   min-width: 320px;

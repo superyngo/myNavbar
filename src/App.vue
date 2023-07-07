@@ -1,4 +1,5 @@
 <script setup>
+import {nextTick} from "vue";
 const state = [
   {tag: "li", title: "To Do", link: "https://superyngo.github.io/to_do_list/"},
   {
@@ -58,7 +59,32 @@ const state = [
     link: "https://superyngo.github.io/Travel-Maker/",
   },
 ];
-console.log(state);
+nextTick(() => {
+  // Get a reference to the link element within the iframe
+  const item = document.querySelectorAll(".item");
+
+  // Add a click event listener to the link
+  item.forEach((li) =>
+    li.addEventListener("mousedown", function (event) {
+      // Get the target URL from the link
+      const targetUrl = li.dataset.link;
+
+      // Check if the middle button is clicked (button value: 1)
+      if (event.button === 1) {
+        // Open the link in a new page
+        window.open(targetUrl, "_blank");
+      }
+
+      if (event.button === 0) {
+        // Open the link in a new page
+        window.location.href = targetUrl;
+      }
+
+      // Scroll the parent page to the target URL
+      // window.parent.location.href = targetUrl;
+    })
+  );
+});
 </script>
 
 <template>
@@ -67,10 +93,12 @@ console.log(state);
       <component
         v-for="item of state"
         :is="item.tag"
-        class="item"
         :key="item.title"
+        class="itemli"
       >
-        <a :href="item.link" target="_blank">{{ item.title }}</a>
+        <button :data-link="item.link" class="item">
+          {{ item.title }}
+        </button>
       </component>
     </ul>
     <div id="copyright">© 2023 superyngo All Rights Reserved.</div>
@@ -87,8 +115,20 @@ console.log(state);
     gap: 1rem;
     justify-content: center;
 
-    .item {
+    .itemli {
       list-style: none;
+      .item {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-weight: 500;
+        color: #000118;
+        text-decoration: underline;
+      }
+      .item:hover {
+        color: #48494e;
+        text-decoration: none;
+      }
     }
   }
 }
