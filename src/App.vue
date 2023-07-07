@@ -108,7 +108,7 @@ const state = [
 <style scoped>
 .navbar {
   position: relative;
-  background: #ffffff;
+  background-color: #fff0df;
   .navbar-nav {
     display: flex;
     flex-direction: row;
