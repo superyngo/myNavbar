@@ -122,11 +122,11 @@ const state = [
         background: none;
         border: none;
         font-weight: 500;
-        /* color: #000118; */
+        color: #000118;
         text-decoration: underline;
       }
       .item:hover {
-        /* color: #48494e; */
+        color: #48494e;
         text-decoration: none;
       }
     }
