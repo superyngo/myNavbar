@@ -10,7 +10,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --background-color: #0e090dd3;
+  --background-color: transparent;
   --font-color: rgb(241, 244, 218);
   color: var(--font-color);
 }
