@@ -12,7 +12,6 @@ const fetchData = (
     )
   ).json()
 ).values;
-console.log(fetchData);
 const state = [];
 for (let i = 1; i < fetchData.length; i++) {
   state.push({
@@ -21,7 +20,6 @@ for (let i = 1; i < fetchData.length; i++) {
     link: fetchData[i][2],
   });
 }
-console.log(state);
 
 state.reverse();
 </script>
